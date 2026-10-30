@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>聊城道路救援_聊城汽车拖车_搭电_补胎_脱困_开锁_高速救援24小时_悟空道路救援</title>
+<meta name="description" content="悟空道路救援聊城服务中心，400-808-2010，覆盖东昌府区、茌平区、临清市、阳谷、莘县、东阿、冠县、高唐及济聊、德上、青兰、高东等聊城高速路段。聊城汽车拖车、搭电、补胎换胎、脱困、开锁、送油，24小时响应。">
+<link rel="canonical" href="https://ramirezmark844.github.io">
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<!-- 百度落地页体验基础校验：viewport/charset/canonical 已就位 -->
+<meta name="format-detection" content="telephone=yes">
+
+<!-- LocalBusiness / AutoRepair 结构化数据，areaServed 覆盖聊城及下辖区县 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "悟空道路救援（聊城服务中心）",
+  "description": "聊城道路救援、聊城汽车拖车、聊城汽车搭电、聊城汽车补胎、聊城汽车脱困、聊城汽车开锁、聊城高速道路救援，24小时响应，服务东昌府区、茌平区、临清市、阳谷县、莘县、东阿县、冠县、高唐县及聊城境内高速公路。",
+  "url": "https://ramirezmark844.github.io",
+  "telephone": "+86-400-808-2010",
+  "priceRange": "¥¥",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "聊城市",
+    "addressRegion": "山东省",
+    "addressCountry": "CN"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "聊城市" },
+    { "@type": "AdministrativeArea", "name": "东昌府区" },
+    { "@type": "AdministrativeArea", "name": "茌平区" },
+    { "@type": "AdministrativeArea", "name": "临清市" },
+    { "@type": "AdministrativeArea", "name": "阳谷县" },
+    { "@type": "AdministrativeArea", "name": "莘县" },
+    { "@type": "AdministrativeArea", "name": "东阿县" },
+    { "@type": "AdministrativeArea", "name": "冠县" },
+    { "@type": "AdministrativeArea", "name": "高唐县" }
+  ],
+  "serviceType": [
+    "聊城道路救援",
+    "聊城汽车拖车",
+    "聊城汽车搭电",
+    "聊城汽车补胎",
+    "聊城汽车脱困",
+    "聊城汽车开锁",
+    "聊城高速道路救援",
+    "聊城高速汽车拖车",
+    "聊城高速汽车补胎换胎送油"
+  ],
+  "openingHours": "Mo-Su 00:00-24:00",
+  "sameAs": []
+}
+</script>
+
+<style>
+/* ========== 基础重置（命名带 lc-rescue 前缀，避免跨模板冲突） ========== */
+:root{
+  --ink:#151b23;
+  --muted:#5b6776;
+  --line:#e3e7ee;
+  --paper:#f6f7fb;
+  --card:#ffffff;
+  --brand:#c8342a;
+  --brand-deep:#9e241d;
+  --accent:#1f4e6b;
+  --radius:14px;
+  --shadow:0 8px 28px rgba(21,27,35,.09);
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.7;
+  padding-bottom:76px; /* 给移动端悬浮条留位 */
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0}
+
+/* ========== 头部 ========== */
+.lc-rescue-header{
+  background:var(--card);
+  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:40;
+}
+.lc-rescue-header__inner{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:12px 18px;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.lc-rescue-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.lc-rescue-brand__logo{
+  width:42px;height:42px;border-radius:12px;
+  object-fit:cover;flex-shrink:0;
+  border:1px solid var(--line);
+}
+.lc-rescue-brand__text{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.lc-rescue-brand__name{font-size:17px;font-weight:800;letter-spacing:.02em;white-space:nowrap}
+.lc-rescue-brand__sub{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lc-rescue-header__call{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--brand);color:#fff;
+  padding:10px 16px;border-radius:999px;
+  font-size:14px;font-weight:800;white-space:nowrap;
+  box-shadow:0 6px 16px rgba(200,52,42,.28);
+}
+.lc-rescue-header__call svg{width:16px;height:16px;flex-shrink:0}
+
+/* ========== Hero ========== */
+.lc-rescue-hero{
+  background:
+    radial-gradient(900px 340px at 12% -10%, rgba(31,78,107,.10), transparent 60%),
+    linear-gradient(180deg,#fbfcfe 0%,var(--paper) 100%);
+  border-bottom:1px solid var(--line);
+}
+.lc-rescue-hero__inner{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:34px 18px 30px;
+  display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center;
+}
+.lc-rescue-hero__eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:12px;font-weight:700;color:var(--accent);
+  background:rgba(31,78,107,.08);
+  padding:6px 12px;border-radius:999px;margin-bottom:14px;
+}
+.lc-rescue-hero__eyebrow::before{
+  content:"";width:7px;height:7px;border-radius:50%;background:var(--brand);
+}
+.lc-rescue-hero h1{
+  font-size:clamp(26px,4.6vw,42px);
+  line-height:1.28;letter-spacing:-.01em;font-weight:900;
+}
+.lc-rescue-hero h1 span{color:var(--brand)}
+.lc-rescue-hero__lead{
+  margin-top:14px;font-size:15px;color:var(--muted);max-width:54ch;
+}
+.lc-rescue-hero__badges{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;
+}
+.lc-rescue-badge{
+  font-size:12px;font-weight:600;
+  padding:6px 11px;border-radius:8px;
+  background:var(--card);border:1px solid var(--line);
+  color:var(--ink);
+}
+.lc-rescue-hero__actions{
+  display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;
+}
+.lc-rescue-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 22px;border-radius:12px;
+  font-size:15px;font-weight:800;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.lc-rescue-btn--primary{
+  background:var(--brand);color:#fff;
+  box-shadow:0 8px 20px rgba(200,52,42,.28);
+}
+.lc-rescue-btn--ghost{
+  background:var(--card);color:var(--ink);
+  border:1px solid var(--line);
+}
+.lc-rescue-btn:active{transform:translateY(1px)}
+
+/* 轮播 */
+.lc-rescue-carousel{
+  position:relative;border-radius:18px;overflow:hidden;
+  background:#dfe5ee;box-shadow:var(--shadow);
+  aspect-ratio:4/3;
+}
+.lc-rescue-carousel__track{
+  display:flex;height:100%;
+  transition:transform .55s cubic-bezier(.4,0,.2,1);
+}
+.lc-rescue-carousel__slide{
+  min-width:100%;height:100%;position:relative;
+}
+.lc-rescue-carousel__slide img{
+  width:100%;height:100%;object-fit:cover;
+}
+.lc-rescue-carousel__cap{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:30px 16px 14px;
+  background:linear-gradient(0deg,rgba(0,0,0,.62),transparent);
+  color:#fff;font-size:12.5px;font-weight:600;
+  line-height:1.45;
+}
+.lc-rescue-carousel__dots{
+  position:absolute;right:12px;bottom:12px;
+  display:flex;gap:6px;z-index:2;
+}
+.lc-rescue-carousel__dot{
+  width:7px;height:7px;border-radius:50%;
+  background:rgba(255,255,255,.45);
+  transition:background .2s, width .2s;
+}
+.lc-rescue-carousel__dot.is-on{background:#fff;width:18px;border-radius:999px}
+
+/* ========== 服务项目 ========== */
+.lc-rescue-section{
+  max-width:var(--max);margin:0 auto;padding:40px 18px;
+}
+.lc-rescue-section__head{max-width:64ch;margin-bottom:24px}
+.lc-rescue-kicker{
+  font-size:12px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--brand);margin-bottom:6px;
+}
+.lc-rescue-section h2{
+  font-size:clamp(21px,3.2vw,28px);line-height:1.35;font-weight:900;
+}
+.lc-rescue-section__desc{margin-top:8px;font-size:14px;color:var(--muted)}
+
+.lc-rescue-services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.lc-rescue-svc{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:20px 18px;
+  position:relative;overflow:hidden;
+}
+.lc-rescue-svc::after{
+  content:"";position:absolute;right:-18px;top:-18px;
+  width:64px;height:64px;border-radius:50%;
+  background:rgba(200,52,42,.06);
+}
+.lc-rescue-svc__no{
+  font-size:11px;font-weight:800;color:var(--brand);
+  letter-spacing:.06em;margin-bottom:8px;
+}
+.lc-rescue-svc h3{font-size:16px;font-weight:800;margin-bottom:6px}
+.lc-rescue-svc p{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* ========== 区域覆盖 ========== */
+.lc-rescue-area{
+  background:var(--card);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.lc-rescue-area__inner{
+  max-width:var(--max);margin:0 auto;padding:40px 18px;
+}
+.lc-rescue-area-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:start;
+}
+.lc-rescue-county-list{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;
+}
+.lc-rescue-county-list span{
+  display:inline-flex;
+  padding:7px 12px;border-radius:8px;
+  background:var(--paper);border:1px solid var(--line);
+  font-size:13px;font-weight:600;color:var(--ink);
+}
+.lc-rescue-highway-box{
+  background:linear-gradient(160deg,#f7f9fc,#eef3f8);
+  border:1px solid var(--line);border-radius:16px;
+  padding:22px 20px;
+}
+.lc-rescue-highway-box h3{font-size:16px;font-weight:800;margin-bottom:10px}
+.lc-rescue-highway-list{
+  display:flex;flex-wrap:wrap;gap:7px;
+}
+.lc-rescue-highway-list em{
+  font-style:normal;font-size:12px;font-weight:700;
+  padding:5px 9px;border-radius:6px;
+  background:#fff;border:1px solid var(--line);color:var(--accent);
+}
+.lc-rescue-highway-note{
+  margin-top:12px;font-size:12.5px;color:var(--muted);line-height:1.65;
+}
+
+/* ========== 正文 / 本地化内容 ========== */
+.lc-rescue-prose{
+  max-width:var(--max);margin:0 auto;padding:40px 18px 16px;
+}
+.lc-rescue-prose h2{
+  font-size:clamp(20px,3vw,26px);font-weight:900;margin-bottom:14px;
+}
+.lc-rescue-prose h3{
+  font-size:17px;font-weight:800;margin:24px 0 8px;
+}
+.lc-rescue-prose p{
+  font-size:14.5px;color:#2b3440;margin-bottom:12px;
+  max-width:76ch;
+}
+.lc-rescue-prose p strong{color:var(--ink)}
+.lc-rescue-prose .lc-rescue-callout{
+  border-left:4px solid var(--brand);
+  background:#fff;border-radius:0 12px 12px 0;
+  padding:14px 16px;margin:16px 0;
+  font-size:14px;color:var(--muted);
+}
+.lc-rescue-prose .lc-rescue-callout strong{color:var(--brand)}
+
+/* 场景列表 */
+.lc-rescue-scenes{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0 22px;
+}
+.lc-rescue-scene{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:16px 15px;
+}
+.lc-rescue-scene__tag{
+  display:inline-block;font-size:10.5px;font-weight:800;
+  color:var(--accent);background:rgba(31,78,107,.08);
+  padding:3px 8px;border-radius:5px;margin-bottom:8px;
+}
+.lc-rescue-scene h4{font-size:14px;font-weight:800;margin-bottom:4px}
+.lc-rescue-scene p{font-size:13px;color:var(--muted);margin:0}
+
+/* ========== 流程 ========== */
+.lc-rescue-steps{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+  margin-top:18px;counter-reset:step;
+}
+.lc-rescue-step{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:18px 15px;position:relative;
+}
+.lc-rescue-step::before{
+  counter-increment:step;content:counter(step);
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:8px;
+  background:var(--brand);color:#fff;
+  font-size:12px;font-weight:800;margin-bottom:10px;
+}
+.lc-rescue-step h4{font-size:14px;font-weight:800;margin-bottom:4px}
+.lc-rescue-step p{font-size:12.5px;color:var(--muted);margin:0;line-height:1.55}
+
+/* ========== FAQ ========== */
+.lc-rescue-faq{max-width:var(--max);margin:0 auto;padding:40px 18px}
+.lc-rescue-faq h2{font-size:clamp(20px,3vw,26px);font-weight:900;margin-bottom:16px}
+.lc-rescue-faq__item{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:18px 18px;margin-bottom:10px;
+}
+.lc-rescue-faq__item h3{
+  font-size:15px;font-weight:800;margin-bottom:6px;color:var(--ink);
+}
+.lc-rescue-faq__item p{font-size:13.5px;color:var(--muted);line-height:1.7}
+
+/* ========== 联系 / 页脚 ========== */
+.lc-rescue-contact{
+  background:var(--ink);color:#e8edf3;
+}
+.lc-rescue-contact__inner{
+  max-width:var(--max);margin:0 auto;padding:44px 18px;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;
+}
+.lc-rescue-contact h2{
+  font-size:clamp(22px,3.4vw,30px);font-weight:900;color:#fff;line-height:1.35;
+}
+.lc-rescue-contact h2 span{color:#ff8d80}
+.lc-rescue-contact__desc{
+  margin-top:10px;font-size:14px;color:#aebac8;max-width:50ch;
+}
+.lc-rescue-contact__phone{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#fff;color:var(--ink);
+  padding:14px 22px;border-radius:12px;
+  font-size:22px;font-weight:900;letter-spacing:.01em;
+  margin-top:18px;white-space:nowrap;
+}
+.lc-rescue-contact__phone small{
+  display:block;font-size:10.5px;font-weight:600;color:var(--muted);letter-spacing:.04em;
+}
+.lc-rescue-contact__meta{
+  font-size:13px;color:#aebac8;line-height:1.9;
+}
+.lc-rescue-contact__meta strong{color:#fff;font-weight:700}
+
+.lc-rescue-footer{
+  background:#0f141a;color:#7f8b99;
+  font-size:12px;line-height:1.8;
+}
+.lc-rescue-footer__inner{
+  max-width:var(--max);margin:0 auto;padding:22px 18px;
+}
+
+/* ========== 悬浮呼叫按钮 ========== */
+.lc-rescue-float{
+  position:fixed;z-index:80;
+  left:0;right:0;bottom:0;
+  display:none;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);
+  box-shadow:0 -6px 20px rgba(21,27,35,.08);
+}
+.lc-rescue-float a{
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  width:100%;padding:13px 16px;border-radius:12px;
+  background:var(--brand);color:#fff;
+  font-size:16px;font-weight:900;
+}
+.lc-rescue-float a svg{width:18px;height:18px}
+.lc-rescue-float__hint{
+  text-align:center;font-size:10.5px;color:var(--muted);margin-top:5px;
+}
+
+/* 桌面端悬浮球 */
+.lc-rescue-deskcall{
+  position:fixed;right:22px;bottom:26px;z-index:80;
+  display:flex;align-items:center;gap:10px;
+  background:var(--brand);color:#fff;
+  padding:12px 18px;border-radius:999px;
+  font-size:14px;font-weight:800;
+  box-shadow:0 10px 26px rgba(200,52,42,.35);
+}
+.lc-rescue-deskcall svg{width:17px;height:17px}
+
+/* ========== 响应式 ========== */
+@media (max-width:900px){
+  .lc-rescue-hero__inner{grid-template-columns:1fr;gap:24px}
+  .lc-rescue-services{grid-template-columns:repeat(2,1fr)}
+  .lc-rescue-area-grid{grid-template-columns:1fr;gap:22px}
+  .lc-rescue-steps{grid-template-columns:repeat(2,1fr)}
+  .lc-rescue-contact__inner{grid-template-columns:1fr;gap:18px}
+  .lc-rescue-deskcall{display:none}
+}
+@media (max-width:640px){
+  body{padding-bottom:86px}
+  .lc-rescue-header__call{display:none}
+  .lc-rescue-hero__inner{padding:24px 16px 26px}
+  .lc-rescue-section,.lc-rescue-prose,.lc-rescue-faq{padding-left:16px;padding-right:16px}
+  .lc-rescue-services{grid-template-columns:1fr}
+  .lc-rescue-scenes{grid-template-columns:1fr}
+  .lc-rescue-steps{grid-template-columns:1fr 1fr}
+  .lc-rescue-float{display:block}
+  .lc-rescue-contact__phone{font-size:20px;padding:12px 18px}
+  .lc-rescue-brand__name{font-size:15px}
+  .lc-rescue-brand__logo{width:36px;height:36px}
+}
+@media (max-width:380px){
+  .lc-rescue-steps{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== 顶部 ========== -->
+<header class="lc-rescue-header">
+  <div class="lc-rescue-header__inner">
+    <div class="lc-rescue-brand">
+      <img class="lc-rescue-brand__logo"
+           src="https://img4.pcauto.com.cn/pcauto/images/auto_hj/20261028/79091032.png"
+           alt="悟空道路救援聊城服务中心标识">
+      <div class="lc-rescue-brand__text">
+        <span class="lc-rescue-brand__name">悟空道路救援</span>
+        <span class="lc-rescue-brand__sub">聊城本地 · 24小时响应</span>
+      </div>
+    </div>
+    <a class="lc-rescue-header__call" href="tel:400-808-2010" aria-label="拨打悟空道路救援聊城电话400-808-2010">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      400-808-2010
+    </a>
+  </div>
+</header>
+
+<!-- ========== Hero ========== -->
+<section class="lc-rescue-hero">
+  <div class="lc-rescue-hero__inner">
+    <div>
+      <span class="lc-rescue-hero__eyebrow">聊城全域 · 汽车应急与高速救援</span>
+      <h1>聊城道路救援<span>24小时</span>｜拖车·搭电·补胎·脱困·开锁</h1>
+      <p class="lc-rescue-hero__lead">
+        悟空道路救援聊城服务中心，电话 400-808-2010。服务东昌府区、茌平区、临清市、阳谷县、莘县、东阿县、冠县、高唐县，以及济聊高速、德上高速、青兰高速、高东高速、莘南高速等聊城境内路段。聊城汽车拖车、聊城汽车搭电、聊城汽车补胎换胎、聊城汽车脱困、聊城汽车开锁、聊城高速道路救援，一个电话调度就近救援车辆。
+      </p>
+      <div class="lc-rescue-hero__badges">
+        <span class="lc-rescue-badge">东昌府区就近派车</span>
+        <span class="lc-rescue-badge">茌平区/临清市覆盖</span>
+        <span class="lc-rescue-badge">高速拖车补胎</span>
+        <span class="lc-rescue-badge">夜间可出车</span>
+      </div>
+      <div class="lc-rescue-hero__actions">
+        <a class="lc-rescue-btn lc-rescue-btn--primary" href="tel:400-808-2010">拨打 400-808-2010</a>
+        <a class="lc-rescue-btn lc-rescue-btn--ghost" href="#lc-rescue-services">查看聊城救援项目</a>
+      </div>
+    </div>
+
+    <!-- 轮播：文字说明全部静态存在于 HTML，JS 仅控制切换 -->
+    <div class="lc-rescue-carousel" id="lcRescueCarousel" aria-label="聊城道路救援现场轮播">
+      <div class="lc-rescue-carousel__track" id="lcRescueTrack">
+        <div class="lc-rescue-carousel__slide">
+          <img src="https://img4.pcauto.com.cn/pcauto/images/auto_hj/20261028/79091011.png"
+               alt="聊城道路救援拖车作业现场，东昌府区城区道路车辆拖运">
+          <div class="lc-rescue-carousel__cap">聊城道路救援 · 东昌府区城区拖车作业</div>
+        </div>
+        <div class="lc-rescue-carousel__slide">
+          <img src="https://img4.pcauto.com.cn/pcauto/images/auto_hj/20261028/79091013.png"
+               alt="聊城汽车搭电救援，茌平区地下车库车辆电瓶亏电启动">
+          <div class="lc-rescue-carousel__cap">聊城汽车搭电 · 茌平区地库车辆启动</div>
+        </div>
+        <div class="lc-rescue-carousel__slide">
+          <img src="https://img4.pcauto.com.cn/pcauto/images/auto_hj/20261028/79090980.png"
+               alt="聊城高速道路救援，济聊高速聊城段补胎换胎作业">
+          <div class="lc-rescue-carousel__cap">聊城高速救援 · 济聊高速段补胎换胎</div>
+        </div>
+        <div class="lc-rescue-carousel__slide">
+          <img src="https://img4.pcauto.com.cn/pcauto/images/auto_hj/20261028/79091012.png"
+               alt="聊城汽车脱困救援，冠县乡道车辆陷车拖拽">
+          <div class="lc-rescue-carousel__cap">聊城汽车脱困 · 冠县乡道陷车处置</div>
+        </div>
+        <div class="lc-rescue-carousel__slide">
+          <img src="https://img4.pcauto.com.cn/pcauto/images/auto_hj/20261028/79090981.png"
+               alt="聊城汽车开锁救援，临清市车辆钥匙锁车内开锁服务">
+          <div class="lc-rescue-carousel__cap">聊城汽车开锁 · 临清市车辆应急开锁</div>
+        </div>
+      </div>
+      <div class="lc-rescue-carousel__dots" id="lcRescueDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 服务项目 ========== -->
+<section class="lc-rescue-section" id="lc-rescue-services">
+  <div class="lc-rescue-section__head">
+    <div class="lc-rescue-kicker">聊城汽车救援服务</div>
+    <h2>聊城道路救援项目：拖车、搭电、补胎、脱困、开锁、高速救援</h2>
+    <p class="lc-rescue-section__desc">
+      以下项目均可在聊城市东昌府区、茌平区、临清市、阳谷县、莘县、东阿县、冠县、高唐县调度，聊城境内高速公路路段同样受理。
+    </p>
+  </div>
+  <div class="lc-rescue-services">
+    <article class="lc-rescue-svc">
+      <div class="lc-rescue-svc__no">01 / 拖车</div>
+      <h3>聊城汽车拖车</h3>
+      <p>事故车、故障车、无法行驶车辆拖运。东昌府区城区、茌平区、临清市及各县城区就近派车，聊城高速拖车同步受理。</p>
+    </article>
+    <article class="lc-rescue-svc">
+      <div class="lc-rescue-svc__no">02 / 搭电</div>
+      <h3>聊城汽车搭电</h3>
+      <p>电瓶亏电、忘关车灯、久停无法启动。聊城汽车搭电覆盖地下车库、小区、单位停车场及道路临时停靠点。</p>
+    </article>
+    <article class="lc-rescue-svc">
+      <div class="lc-rescue-svc__no">03 / 补胎</div>
+      <h3>聊城汽车补胎换胎</h3>
+      <p>扎钉漏气、爆胎、备胎更换。聊城汽车补胎可上门，高速路段补胎换胎需按高速救援规范作业。</p>
+    </article>
+    <article class="lc-rescue-svc">
+      <div class="lc-rescue-svc__no">04 / 脱困</div>
+      <h3>聊城汽车脱困</h3>
+      <p>陷泥、陷沙、路肩滑落、乡道田边受困。冠县、莘县、阳谷县等县乡道路脱困需求较多，可调度拖拽设备。</p>
+    </article>
+    <article class="lc-rescue-svc">
+      <div class="lc-rescue-svc__no">05 / 开锁</div>
+      <h3>聊城汽车开锁</h3>
+      <p>钥匙锁车内、钥匙丢失、车门无法开启。聊城汽车开锁需核验车辆证件后操作，东昌府区、临清市响应较快。</p>
+    </article>
+    <article class="lc-rescue-svc">
+      <div class="lc-rescue-svc__no">06 / 高速</div>
+      <h3>聊城高速道路救援</h3>
+      <p>济聊高速、德上高速、青兰高速、高东高速、莘南高速聊城段拖车、补胎换胎、送油。高速作业需服从路段管理要求。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ========== 区域覆盖 ========== -->
+<section class="lc-rescue-area">
+  <div class="lc-rescue-area__inner">
+    <div class="lc-rescue-section__head">
+      <div class="lc-rescue-kicker">聊城服务范围</div>
+      <h2>聊城哪些区县可以叫道路救援？</h2>
+      <p class="lc-rescue-section__desc">
+        悟空道路救援在聊城以区县为单位调度，不是“只写聊城”的泛页面。以下区县及高速路段均为实际可受理范围。
+      </p>
+    </div>
+    <div class="lc-rescue-area-grid">
+      <div>
+        <h3 style="font-size:16px;font-weight:800;margin-bottom:4px;">聊城市下辖区县</h3>
+        <div class="lc-rescue-county-list">
+          <span>东昌府区</span>
+          <span>茌平区</span>
+          <span>临清市</span>
+          <span>阳谷县</span>
+          <span>莘县</span>
+          <span>东阿县</span>
+          <span>冠县</span>
+          <span>高唐县</span>
+        </div>
+        <p style="font-size:13px;color:var(--muted);margin-top:14px;line-height:1.7;">
+          东昌府区覆盖古楼街道、柳园街道、新区街道、湖西街道、东城街道、闫寺街道、北城街道、道口铺街道、李海务街道、蒋官屯街道等区域；茌平区、临清市及各县城区主干道、商圈、住宅集中区、工业园区周边均可派车。
+        </p>
+      </div>
+      <div class="lc-rescue-highway-box">
+        <h3>聊城境内主要高速路段</h3>
+        <div class="lc-rescue-highway-list">
+          <em>济聊高速</em>
+          <em>青银高速</em>
+          <em>东吕高速</em>
+          <em>德上高速</em>
+          <em>莘南高速</em>
+          <em>青兰高速</em>
+          <em>高东高速</em>
+        </div>
+        <p class="lc-rescue-highway-note">
+          聊城高速道路救援涉及济聊、德上、青兰、高东、莘南等路段。高速拖车、高速补胎换胎、高速送油需提供准确公里桩号或服务区名称，以便调度就近救援车辆。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 正文：本地化内容 ========== -->
+<section class="lc-rescue-prose">
+  <h2>聊城道路救援本地服务说明</h2>
+  <p>
+    在聊城开车，故障和意外往往发生在最不方便的时间和地点：早高峰的东昌府区柳园路、晚高峰的茌平区城区、临清市老城窄巷、冠县乡道会车路段，或者济聊高速聊城段的长距离行驶途中。悟空道路救援聊城服务中心处理的不是“通用救援咨询”，而是<strong>以聊城各区县实际道路条件为调度依据</strong>的汽车应急服务。电话 400-808-2010，接通后说明所在区县、具体位置、车辆状况，调度端按就近原则安排拖车、搭电、补胎、脱困或开锁资源。
+  </p>
+  <p>
+    聊城汽车拖车和聊城高速汽车拖车是两类不同场景。城区拖车关注小区地库限高、窄路转弯半径、商业综合体入口通行条件；高速拖车则必须遵守路段管理方的作业流程，需要准确桩号，救援车辆从最近收费站或服务区进入。东阿县黄河沿岸道路、阳谷县与莘县交界处的县乡道路、高唐县部分工业园区周边道路，拖车和脱困的车型配置也有差异。页面不把“聊城”当作一个笼统词使用，而是把<strong>东昌府区、茌平区、临清市、阳谷县、莘县、东阿县、冠县、高唐县</strong>作为调度单元分别对待。
+  </p>
+
+  <div class="lc-rescue-callout">
+    <strong>本地提示：</strong>聊城高速道路救援中，济聊高速、德上高速、青兰高速、高东高速、莘南高速的车流特征和救援入口不同。拨打电话时如果能说出“在哪个高速、往哪个方向、大概哪个收费站或服务区附近”，调度效率会明显提高。
+  </div>
+
+  <h3>聊城常见汽车救援场景</h3>
+  <div class="lc-rescue-scenes">
+    <div class="lc-rescue-scene">
+      <span class="lc-rescue-scene__tag">城区通勤</span>
+      <h4>东昌府区早晚高峰搭电</h4>
+      <p>车辆在小区地库或单位停车场无法启动，电瓶老化、忘关灯是常见原因。聊城汽车搭电可到地库作业，东昌府区多数位置可较快安排。</p>
+    </div>
+    <div class="lc-rescue-scene">
+      <span class="lc-rescue-scene__tag">县乡道路</span>
+      <h4>冠县/莘县车辆陷车脱困</h4>
+      <p>会车让行滑入路肩、雨后泥泞陷车、田边临时停车下陷。聊城汽车脱困根据陷车程度安排拖拽或辅助驶出，县乡道路需提前说明路面宽度。</p>
+    </div>
+    <div class="lc-rescue-scene">
+      <span class="lc-rescue-scene__tag">高速出行</span>
+      <h4>济聊高速聊城段补胎</h4>
+      <p>高速扎胎、爆胎后不宜继续行驶。聊城高速汽车补胎换胎需停靠应急车道并放置警示，救援车辆按路段要求进入，人员应撤至护栏外。</p>
+    </div>
+    <div class="lc-rescue-scene">
+      <span class="lc-rescue-scene__tag">钥匙应急</span>
+      <h4>临清市/茌平区汽车开锁</h4>
+      <p>钥匙锁车内、钥匙误放后备箱。聊城汽车开锁需核验行驶证或车辆归属信息，临清市老城区窄巷和茌平区地下车库均可安排。</p>
+    </div>
+  </div>
+
+  <h3>为什么聊城本地救援需要“分区县调度”</h3>
+  <p>
+    聊城市域范围大，从东昌府区到高唐县、从临清市到东阿县，跨度较远。同一个“聊城道路救援”关键词下，车主实际需要的是<strong>离自己最近的那台救援车</strong>。悟空道路救援聊城服务中心按区县记录常见故障类型和道路特征：东昌府区搭电和地库拖车需求集中，茌平区、临清市开锁和城区拖车较多，阳谷县、莘县、冠县县乡道路脱困比例偏高，东阿县沿黄道路和高速出入口附近需要关注拖车通行条件，高唐县工业园区周边货车与小型车救援设备不同。这些信息写入页面，是为了让搜索“聊城汽车救援”“聊城汽车脱困”的车主看到的不是一段可以复制到任何城市的模板文字。
+  </p>
+
+  <h3>聊城高速道路救援的几点实际注意事项</h3>
+  <p>
+    高速救援与城区救援的操作边界不同。在济聊高速、青银高速、东吕高速、德上高速、莘南高速、青兰高速、高东高速聊城段遇到车辆故障，首先应打开双闪、在来车方向放置三角警示牌，人员撤离到护栏外安全区域，然后再拨打 400-808-2010 说明公里桩号或最近服务区。聊城高速汽车拖车、聊城高速汽车补胎换胎、高速送油均需要救援车辆从特定入口进入，调度端会根据路段和方向安排。夜间高速救援还需额外确认路段照明和作业安全条件。
+  </p>
+</section>
+
+<!-- ========== 流程 ========== -->
+<section class="lc-rescue-section">
+  <div class="lc-rescue-section__head">
+    <div class="lc-rescue-kicker">调度流程</div>
+    <h2>聊城道路救援怎么叫车？四步完成</h2>
+  </div>
+  <div class="lc-rescue-steps">
+    <div class="lc-rescue-step">
+      <h4>说明位置</h4>
+      <p>讲清在聊城哪个区县、哪条路/哪个小区/高速桩号或服务区。</p>
+    </div>
+    <div class="lc-rescue-step">
+      <h4>描述车况</h4>
+      <p>无法启动、爆胎、陷车、钥匙锁车内、事故无法行驶，决定派拖车还是其他设备。</p>
+    </div>
+    <div class="lc-rescue-step">
+      <h4>确认调度</h4>
+      <p>调度端按东昌府区、茌平区、临清市及各县就近安排，告知预计到达信息。</p>
+    </div>
+    <div class="lc-rescue-step">
+      <h4>现场作业</h4>
+      <p>救援人员到场后按聊城本地道路和高速管理要求完成拖车、搭电、补胎、脱困或开锁。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="lc-rescue-faq">
+  <h2>聊城道路救援常见问题</h2>
+
+  <div class="lc-rescue-faq__item">
+    <h3>聊城道路救援电话是多少？</h3>
+    <p>悟空道路救援聊城服务中心电话：400-808-2010。24小时受理聊城汽车拖车、搭电、补胎换胎、脱困、开锁及聊城高速道路救援。</p>
+  </div>
+
+  <div class="lc-rescue-faq__item">
+    <h3>聊城哪些区县可以派车？</h3>
+    <p>东昌府区、茌平区、临清市、阳谷县、莘县、东阿县、冠县、高唐县均纳入调度范围。东昌府区覆盖古楼、柳园、新区、湖西、东城、闫寺、北城、道口铺、李海务、蒋官屯等街道及周边乡镇。</p>
+  </div>
+
+  <div class="lc-rescue-faq__item">
+    <h3>聊城高速汽车拖车和城区拖车有什么不同？</h3>
+    <p>聊城高速拖车需要提供准确公里桩号或服务区名称，救援车辆按高速路段管理要求进入；城区拖车更关注地库限高、窄路通行和小区入口条件。济聊、德上、青兰、高东、莘南等聊城段高速均可受理。</p>
+  </div>
+
+  <div class="lc-rescue-faq__item">
+    <h3>聊城汽车搭电和补胎可以上门吗？</h3>
+    <p>聊城汽车搭电、聊城汽车补胎换胎均可上门，覆盖小区地库、单位停车场、道路临时停靠点。高速补胎换胎需在应急车道安全防护条件下进行。</p>
+  </div>
+
+  <div class="lc-rescue-faq__item">
+    <h3>聊城汽车开锁需要什么手续？</h3>
+    <p>聊城汽车开锁前需核验车辆行驶证或能证明车辆归属的有效信息，确认无误后操作。东昌府区、临清市、茌平区等区域均可安排。</p>
+  </div>
+</section>
+
+<!-- ========== 联系 ========== -->
+<section class="lc-rescue-contact" id="lc-rescue-contact">
+  <div class="lc-rescue-contact__inner">
+    <div>
+      <h2>聊城道路救援，<span>直接打电话最快</span></h2>
+      <p class="lc-rescue-contact__desc">
+        页面可以慢慢看，车停在路上不能等。说明区县、位置、车况，调度端按聊城本地情况安排。
+      </p>
+      <a class="lc-rescue-contact__phone" href="tel:400-808-2010">
+        <span>
+          <small>悟空道路救援 · 聊城</small>
+          400-808-2010
+        </span>
+      </a>
+    </div>
+    <div class="lc-rescue-contact__meta">
+      <strong>服务品牌：</strong>悟空道路救援<br>
+      <strong>服务城市：</strong>聊城市<br>
+      <strong>覆盖区县：</strong>东昌府区、茌平区、临清市、阳谷县、莘县、东阿县、冠县、高唐县<br>
+      <strong>高速路段：</strong>济聊高速、青银高速、东吕高速、德上高速、莘南高速、青兰高速、高东高速聊城段<br>
+      <strong>服务时间：</strong>24小时
+    </div>
+  </div>
+</section>
+
+<footer class="lc-rescue-footer">
+  <div class="lc-rescue-footer__inner">
+    © 悟空道路救援 · 聊城道路救援 / 聊城汽车拖车 / 聊城汽车搭电 / 聊城汽车补胎 / 聊城汽车脱困 / 聊城汽车开锁 / 聊城高速道路救援 · 电话 400-808-2010
+  </div>
+</footer>
+
+<!-- ========== 移动端悬浮呼叫 ========== -->
+<div class="lc-rescue-float" role="region" aria-label="快速拨打聊城道路救援电话">
+  <a href="tel:400-808-2010">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+    呼叫 400-808-2010
+  </a>
+  <div class="lc-rescue-float__hint">聊城本地调度 · 24小时</div>
+</div>
+
+<!-- 桌面端悬浮呼叫 -->
+<a class="lc-rescue-deskcall" href="tel:400-808-2010" aria-label="拨打聊城道路救援电话">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </svg>
+  400-808-2010
+</a>
+
+<script>
+/* 仅轮播切换使用 JS；所有轮播 alt、标题、描述均已在 HTML 中静态存在 */
+(function () {
+  var track = document.getElementById('lcRescueTrack');
+  var dotsBox = document.getElementById('lcRescueDots');
+  if (!track || !dotsBox) return;
+
+  var slides = track.children;
+  var total = slides.length;
+  var index = 0;
+  var timer = null;
+
+  for (var i = 0; i < total; i++) {
+    var dot = document.createElement('button');
+    dot.className = 'lc-rescue-carousel__dot' + (i === 0 ? ' is-on' : '');
+    dot.type = 'button';
+    dot.setAttribute('aria-label', '切换到聊城道路救援第' + (i + 1) + '张现场图');
+    dot.dataset.i = i;
+    dotsBox.appendChild(dot);
+  }
+
+  var dots = dotsBox.children;
+
+  function go(n) {
+    index = (n + total) % total;
+    track.style.transform = 'translateX(-' + (index * 100) + '%)';
+    for (var j = 0; j < dots.length; j++) {
+      dots[j].classList.toggle('is-on', j === index);
+    }
+  }
+
+  function next() { go(index + 1); }
+
+  function start() {
+    stop();
+    timer = setInterval(next, 4200);
+  }
+
+  function stop() {
+    if (timer) { clearInterval(timer); timer = null; }
+  }
+
+  dotsBox.addEventListener('click', function (e) {
+    var t = e.target.closest('.lc-rescue-carousel__dot');
+    if (!t) return;
+    go(parseInt(t.dataset.i, 10));
+    start();
+  });
+
+  var wrap = document.getElementById('lcRescueCarousel');
+  wrap.addEventListener('mouseenter', stop);
+  wrap.addEventListener('mouseleave', start);
+  wrap.addEventListener('touchstart', stop, { passive: true });
+  wrap.addEventListener('touchend', start, { passive: true });
+
+  go(0);
+  start();
+})();
+</script>
+
+</body>
+</html>
